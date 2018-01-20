@@ -2,6 +2,9 @@
 
 > A Vue.js component styleguide example
 
+Vue component styleguide example http://vlewin.me/vue-hexagon-grid/
+
+
 ## Installation
 
 ### Using yarn
