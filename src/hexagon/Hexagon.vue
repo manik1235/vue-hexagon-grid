@@ -61,7 +61,7 @@
       border-left: 5.2vmin solid transparent
       border-right: 5.2vmin solid transparent
       position: absolute
-      top: -3.0vmin
+      top: -2.9vmin
     margin: 3.0vmin 0 3.0vmin 0.4vmin
     width: 10.4vmin
     height: 6.0vmin
@@ -76,7 +76,7 @@
     &:after
       content: ""
       position: absolute
-      bottom: -3.0vmin
+      bottom: -2.9vmin
       border-top: 3.0vmin solid #6C6
       border-left: 5.2vmin solid transparent
       border-right: 5.2vmin solid transparent
