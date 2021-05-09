@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="hexagon-grid">
-    <hexagon-row></hexagon-row>
-    <hexagon-row></hexagon-row>
-    <hexagon-row></hexagon-row>
+    <HexagonRow></HexagonRow>
+    <HexagonRow></HexagonRow>
+    <HexagonRow></HexagonRow>
   </div>
 </template>
 
@@ -11,12 +11,11 @@
  * Component documentation
  */
 
-import Hexagon from '../hexagon'
 import HexagonRow from '../hexagon-row'
 
 export default {
   name: 'HexagonGrid',
-  components: { Hexagon, HexagonRow },
+  components: { HexagonRow },
   props: {
     /**
      * The component text
@@ -25,8 +24,8 @@ export default {
       type: String,
       default: '',
       required: true
-    },
-  },
+    }
+  }
 }
 </script>
 

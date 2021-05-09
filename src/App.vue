@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HexagonGrid text="Hello World!"></HexagonGrid>
+    <HexagonGrid color="blue">
+      <span slot="top">8</span>
+      <span slot="middle">Oxygen</span>
+      <span slot="bottom">O2</span>
+    </HexagonGrid>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HexagonGrid from './components/hexagon-grid'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HexagonGrid
   }
 }
 </script>
