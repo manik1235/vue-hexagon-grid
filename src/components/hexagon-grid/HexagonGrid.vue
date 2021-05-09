@@ -39,5 +39,4 @@ export default {
 
   .hexagon-row:nth-child(odd)
     background: #eee
-
 </style>

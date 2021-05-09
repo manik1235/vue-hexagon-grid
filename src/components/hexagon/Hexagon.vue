@@ -101,66 +101,13 @@ export default {
     &:after
       border-top: 3.0vmin solid tomato
 
-.grey
-  &:before
-    border-bottom: 3vmin solid #888
-  background-color: #888
-  &:after
-    border-top: 3vmin solid #888
+$hexagon-colors: ("grey": "#888", "amber": "#ffc107", "orange": "#fb8c00", "red": "#f44336", "blue": "#0288d1", "green": "#43a047", "lime": "#cddc39", "violet": "#5e35b1", "indigo": "#3949ab")
 
-.amber
-  &:before
-    border-bottom: 3vmin solid #ffc107
-  background-color: #ffc107
-  &:after
-    border-top: 3vmin solid #ffc107
-
-.orange
-  &:before
-    border-bottom: 3vmin solid #fb8c00
-  background-color: #fb8c00
-  &:after
-    border-top: 3vmin solid #fb8c00
-
-.red
-  &:before
-    border-bottom: 3vmin solid #f44336
-  background-color: #f44336
-  &:after
-    border-top: 3vmin solid #f44336
-
-.blue
-  &:before
-    border-bottom: 3vmin solid #0288d1
-  background-color: #0288d1
-  &:after
-    border-top: 3vmin solid #0288d1
-
-.green
-  &:before
-    border-bottom: 3vmin solid #43a047
-  background-color: #43a047
-  &:after
-    border-top: 3vmin solid #43a047
-
-.lime
-  &:before
-    border-bottom: 3vmin solid #cddc39
-  background-color: #cddc39
-  &:after
-    border-top: 3vmin solid #cddc39
-
-.violet
-  &:before
-    border-bottom: 3vmin solid #5e35b1
-  background-color: #5e35b1
-  &:after
-    border-top: 3vmin solid #5e35b1
-
-.indigo
-  &:before
-    border-bottom: 3vmin solid #3949ab
-  background-color: #3949ab
-  &:after
-    border-top: 3vmin solid #3949ab
+@each $name, $color in $hexagon-colors
+  .#{$name}
+    &:before
+      border-bottom: 3vmin solid #{$color}
+    background-color: #{$color}
+    &:after
+      border-top: 3vmin solid #{$color}
 </style>
