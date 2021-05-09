@@ -1,44 +1,9 @@
 <template>
   <div class="hexagon-row">
-    <hexagon>
-      <span slot="top"></span>
-      <span slot="middle">ROW</span>
-      <span slot="bottom"></span>
-    </hexagon>
-    <hexagon>
-      <span slot="top"></span>
-      <span slot="middle">ROW</span>
-      <span slot="bottom"></span>
-    </hexagon>
-    <hexagon>
-      <span slot="top"></span>
-      <span slot="middle">ROW</span>
-      <span slot="bottom"></span>
-    </hexagon>
-    <hexagon>
-      <span slot="top"></span>
-      <span slot="middle">ROW</span>
-      <span slot="bottom"></span>
-    </hexagon>
-    <hexagon>
-      <span slot="top"></span>
-      <span slot="middle">ROW</span>
-      <span slot="bottom"></span>
-    </hexagon>
-    <hexagon>
-      <span slot="top"></span>
-      <span slot="middle">ROW</span>
-      <span slot="bottom"></span>
-    </hexagon>
-    <hexagon>
-      <span slot="top"></span>
-      <span slot="middle">ROW</span>
-      <span slot="bottom"></span>
-    </hexagon>
-    <hexagon>
-      <span slot="top"></span>
-      <span slot="middle">ROW</span>
-      <span slot="bottom"></span>
+    <hexagon v-for="cell in 8">
+      <span slot="top">{{ topMessage }}</span>
+      <span slot="middle">{{ middleMessage }}</span>
+      <span slot="bottom">{{ bottomMessage }}</span>
     </hexagon>
   </div>
 </template>

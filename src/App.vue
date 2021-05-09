@@ -1,15 +1,23 @@
 <template>
   <div id="app">
-    <vue-hexagon text="Hello World!"></vue-hexagon>
-    <vue-hexagon color="blue">
+    <HexagonGrid text="Hello World!"></HexagonGrid>
+    <HexagonGrid color="blue">
       <span slot="top">8</span>
       <span slot="middle">Oxygen</span>
       <span slot="bottom">O2</span>
-    </vue-hexagon>
+    </HexagonGrid>
   </div>
 </template>
 
 <script>
+import HexagonGrid from './src/hexagon-grid'
+
+export default {
+  name: 'App',
+  components: {
+    HexagonGrid
+  }
+}
 </script>
 
 <style lang="scss">
