@@ -35,7 +35,7 @@ export default {
 
   .hexagon-row:nth-child(even)
     background: #fafafa
-    padding-left: 5.4vmin
+    padding-left: 5.2vmin
 
   .hexagon-row:nth-child(odd)
     background: #eee

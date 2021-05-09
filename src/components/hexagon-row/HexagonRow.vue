@@ -71,7 +71,7 @@ export default {
 <style lang="sass">
 .hexagon-row
   display: flex
-  margin-bottom: -2.6vmin
+  margin-bottom: -3vmin
 
 .hexagon:first-child
   margin-left: 0.0vmin
