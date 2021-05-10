@@ -1,7 +1,7 @@
 <template lang="html">
-  <div class="hexagon-grid">
-    <HexagonRow v-for="row in rowCount" :key="row" :hexes="hexesPerRow"></HexagonRow>
-  </div>
+<div class="hexagon-grid">
+  <HexagonRow v-for="row in rows" :key="row" :hexes="hexesPerRow"></HexagonRow>
+</div>
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
       type: Number,
       default: 8
     },
-    rowCount: {
+    rows: {
       type: Number,
       default: 3
     }

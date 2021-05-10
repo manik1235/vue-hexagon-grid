@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .hexagon-row
   display: flex
   margin-bottom: -3vmin

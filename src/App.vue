@@ -1,12 +1,7 @@
 <template>
-  <div id="app">
-    <HexagonGrid text="Hello World!"></HexagonGrid>
-    <HexagonGrid color="blue">
-      <span slot="top">8</span>
-      <span slot="middle">Oxygen</span>
-      <span slot="bottom">O2</span>
-    </HexagonGrid>
-  </div>
+<div id="app">
+  <HexagonGrid rowCount="rowCount"></HexagonGrid>
+</div>
 </template>
 
 <script>
@@ -16,11 +11,16 @@ export default {
   name: 'App',
   components: {
     HexagonGrid
+  },
+  data () {
+    return {
+      rowCount: 4
+    }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

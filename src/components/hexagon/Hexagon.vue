@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto|Russo+One')
 
 .hexagon
