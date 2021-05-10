@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="hexagon-grid">
-    <HexagonRow></HexagonRow>
-    <HexagonRow></HexagonRow>
-    <HexagonRow></HexagonRow>
+    <HexagonRow v-bind:hexes="row.hexes"></HexagonRow>
+    <HexagonRow v-bind:hexes="row.hexes"></HexagonRow>
+    <HexagonRow v-bind:hexes="row.hexes"></HexagonRow>
   </div>
 </template>
 
@@ -15,11 +15,15 @@ import HexagonRow from '../hexagon-row'
 
 export default {
   name: 'HexagonGrid',
+  data () {
+    return {
+      row: {
+        hexes: 8
+      }
+    }
+  },
   components: { HexagonRow },
   props: {
-    /**
-     * The component text
-     */
     text: {
       type: String,
       default: '',

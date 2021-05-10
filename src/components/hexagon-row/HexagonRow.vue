@@ -1,45 +1,10 @@
 <template>
 <div class="hexagon-row">
-  <hexagon>
+  <Hexagon v-for="hex in hexes" :key="hex">
     <span slot="top"></span>
     <span slot="middle">ROW</span>
     <span slot="bottom"></span>
-  </hexagon>
-  <hexagon>
-    <span slot="top"></span>
-    <span slot="middle">ROW</span>
-    <span slot="bottom"></span>
-  </hexagon>
-  <hexagon>
-    <span slot="top"></span>
-    <span slot="middle">ROW</span>
-    <span slot="bottom"></span>
-  </hexagon>
-  <hexagon>
-    <span slot="top"></span>
-    <span slot="middle">ROW</span>
-    <span slot="bottom"></span>
-  </hexagon>
-  <hexagon>
-    <span slot="top"></span>
-    <span slot="middle">ROW</span>
-    <span slot="bottom"></span>
-  </hexagon>
-  <hexagon>
-    <span slot="top"></span>
-    <span slot="middle">ROW</span>
-    <span slot="bottom"></span>
-  </hexagon>
-  <hexagon>
-    <span slot="top"></span>
-    <span slot="middle">ROW</span>
-    <span slot="bottom"></span>
-  </hexagon>
-  <hexagon>
-    <span slot="top"></span>
-    <span slot="middle">ROW</span>
-    <span slot="bottom"></span>
-  </hexagon>
+  </Hexagon>
 </div>
 </template>
 
@@ -57,6 +22,10 @@ export default {
     color: {
       default: 'grey',
       type: String
+    },
+    hexes: {
+      type: Number,
+      default: 8
     }
   },
 
