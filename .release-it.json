@@ -1,9 +1,0 @@
-{
-  "pkgFiles": [
-    "package.json"
-  ],
-  "github": {
-    "release": true
-  },
-  "buildCommand": "npm run build"
-}

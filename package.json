@@ -1,49 +1,38 @@
 {
-  "name": "vue-hexagon-grid",
-  "version": "0.0.1",
-  "description": "A Vue.js component module",
-  "author": "Vladislav Lewin <vlewin@suse.de>",
-  "main": "dist/my-first-component.min.js",
-  "license": "MIT",
+  "name": "hexagon-grid",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "lint": "eslint src/**/*.vue",
-    "build": "poi build --format cjs --dist dist; poi build --format umd --dist dist/umd",
-    "build:doc": "vue-styleguidist build",
-    "serve": "vue-styleguidist server",
-    "test": "poi test",
-    "test:watch": "poi test --watch",
-    "test:cov": "poi test --coverage"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint"
   },
-  "keywords": [
-    "vue",
-    "component"
-  ],
-  "files": [
-    "src/",
-    "dist/"
-  ],
   "dependencies": {
-    "vue": "^2.5.3"
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
-    "babel-plugin-istanbul": "^4.1.1",
-    "babel-plugin-transform-runtime": "^6.22.0",
-    "babel-preset-env": "^1.3.2",
-    "babel-preset-stage-2": "^6.22.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-e2e-nightwatch": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-mocha": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
     "chai": "^4.1.2",
-    "eslint": "^4.11.0",
-    "eslint-plugin-vue": "beta",
-    "karma-chai": "^0.1.0",
-    "karma-phantomjs-launcher": "^1.0.4",
-    "karma-phantomjs-shim": "^1.5.0",
-    "node-glob": "^1.2.0",
-    "node-sass": "^4.7.2",
-    "poi": "^9.5.2",
-    "poi-preset-karma": "^9.2.1",
-    "sass-loader": "^6.0.6",
-    "typescript": "^2.6.1",
-    "vue-styleguidist": "^1.4.4",
-    "vue-webpack-loaders": "^1.0.6",
-    "webpack": "^3.1.0"
+    "chromedriver": "90",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "geckodriver": "^1.20.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
   }
 }
