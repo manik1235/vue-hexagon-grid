@@ -1,33 +1,23 @@
 <template lang="html">
   <div class="hexagon-grid">
-    <HexagonRow v-bind:hexes="row.hexes"></HexagonRow>
-    <HexagonRow v-bind:hexes="row.hexes"></HexagonRow>
-    <HexagonRow v-bind:hexes="row.hexes"></HexagonRow>
+    <HexagonRow v-for="row in rowCount" :key="row" :hexes="hexesPerRow"></HexagonRow>
   </div>
 </template>
 
 <script>
-/**
- * Component documentation
- */
-
 import HexagonRow from '../hexagon-row'
 
 export default {
   name: 'HexagonGrid',
-  data () {
-    return {
-      row: {
-        hexes: 8
-      }
-    }
-  },
   components: { HexagonRow },
   props: {
-    text: {
-      type: String,
-      default: '',
-      required: true
+    hexesPerRow: {
+      type: Number,
+      default: 8
+    },
+    rowCount: {
+      type: Number,
+      default: 3
     }
   }
 }

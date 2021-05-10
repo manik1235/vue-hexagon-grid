@@ -1,37 +1,20 @@
 <template>
-<div class="hexagon" v-bind:class="color" @click="onClick">
-  <div class="top">
-    <slot name="top"></slot>
-  </div>
-  <div class="middle">
-    <slot name="middle"></slot>
-  </div>
-  <div class="bottom">
-    <slot name="bottom"></slot>
-  </div>
-</div>
+<div class="hexagon" v-bind:class="color" @click="onClick"></div>
 </template>
 
 <script>
 export default {
   name: 'Hexagon',
-  data () {
-    return {
-    }
-  },
-
   props: {
     color: {
       default: 'white',
       type: String
     },
-
     background: {
       default: 'grey',
       type: String
     }
   },
-
   methods: {
     onClick () {
       this.$emit('click')
@@ -48,12 +31,6 @@ export default {
 
   &:first-child
     margin-left: 0.0vmin
-  .top
-    font-size: 0.5rem
-  .middle
-    font-size: 0.75rem
-  .bottom
-    font-size: 0.5rem
   &:before
     content: ""
     border-bottom: 3vmin solid #6C6
